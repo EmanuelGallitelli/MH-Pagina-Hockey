@@ -334,6 +334,7 @@ body{
     text-align: center;
     font-size: 1.3rem;
     color: white;
+    border-radius: var(--styleBorderRadius);
     box-shadow: var(--styleBorderShadow);
     margin: 3%;
     padding: 1%;

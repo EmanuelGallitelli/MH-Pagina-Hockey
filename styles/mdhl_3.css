@@ -1,0 +1,383 @@
+:root {
+    --backgroundPrincipal: brown;
+    --styleBorder: 3px solid yellow;
+    --styleBorderRadius: 30px;
+    --styleBorderShadow: 0 0 100px 5px black;
+    --styleBorderShadowSecondary: 0 0 100px 25px black;
+    --transition: 0.4s ease-in-out;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--backgroundPrincipal);
+}
+
+/*Banner*/
+
+.container1{
+    background-color: var(--backgroundPrincipal);
+    color: white;
+}
+
+.containerTitle{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3%;
+}
+
+.containerTitle .logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.containerTitle .logo img{
+    border: var(--styleBorder);
+    border-radius: var(--styleBorderRadius);
+    width: 20rem;
+    box-shadow: var(--styleBorderShadow);
+    transition: var(--transition);
+}
+
+.containerTitle .logo img:hover{
+    box-shadow: var(--styleBorderShadowSecondary); 
+}
+
+.containerTitle .title{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    -webkit-text-stroke: 3px yellow;
+}
+
+.containerTitle .title h1{
+    padding: 8%;
+    font-size: 5rem;
+    border-radius: var(--styleBorderRadius);
+    box-shadow: var(--styleBorderShadow);
+    transition: 3s ease-in-out;
+}
+
+.containerTitle .title h1:hover{
+    font-size: 6rem;
+}
+
+.containerTitle nav{
+    padding: 3%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: var(--styleBorder);
+    box-shadow: var(--styleBorderShadow);
+    border-radius: var(--styleBorderRadius);
+}
+
+.containerTitle nav a{
+    margin: 10%;
+    padding: 10%;
+    display: flex;
+    text-align: center;
+    border: var(--styleBorder);
+    border-radius: var(--styleBorderRadius);
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    box-shadow: var(--styleBorderShadow);
+    transition: var(--transition);
+}
+
+.containerTitle nav a:hover{
+    color: black;
+    font-size: 1.2rem;
+    box-shadow: var(--styleBorderShadowSecondary);
+    background-color: yellow;
+}
+
+.containerImg{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    box-shadow: var(--styleBorderShadow);
+    width: 90%;
+    border-radius: var(--styleBorderRadius);
+}
+
+.containerImg img{
+    width: 60%;
+    border: var(--styleBorder);
+    border-radius: var(--styleBorderRadius);
+    background-color: yellow;
+    box-shadow: var(--styleBorderShadow);
+    transition: var(--transition);
+}
+
+.containerImg img:hover{
+    width: 80%;
+    box-shadow: var(--styleBorderShadowSecondary);
+}
+
+/*Home*/
+
+.containerHome{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+}
+
+.containerHome h2{
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    -webkit-text-stroke: 3px yellow;
+}
+
+.containerHomeText{
+    padding: 3%;
+    border: var(--styleBorder);
+    border-radius: var(--styleBorderRadius);
+    box-shadow: var(--styleBorderShadow);
+}
+
+.containerHome h3{
+    font-size: 4rem;
+    padding: 3%;
+    text-decoration: underline yellow;
+}
+
+.containerHome h4{
+    font-size: 2rem;
+    padding: 3%;
+}
+
+/*About*/
+
+.containerAbout{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border: var(--styleBorder);
+    border-radius: var(--styleBorderRadius);
+    box-shadow: var(--styleBorderShadow);
+}
+
+.containerAbout section{
+    transition: 2s;
+    padding: 3%;
+}
+
+.containerAbout section h2{
+    padding: 2%;
+    font-size: 2rem;
+    text-decoration: underline yellow;
+}
+
+.containerAbout section:hover{
+    font-size: 1.5rem;
+}
+
+/*Contact*/
+
+.containerContact{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.containerContactTexto a{
+    color: white;
+}
+
+/*Rules*/
+
+.containerList{
+    margin: 5%;
+    padding: 5%;
+    box-shadow: var(--styleBorderShadow);
+}
+
+.containerList .containerListTitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    -webkit-text-stroke: 1px yellow;
+
+}
+
+.containerList .list{
+    border: var(--styleBorder);
+    border-radius: var(--styleBorderRadius);
+    transition: var(--transition);
+    color: white;
+    font-size: 1.1rem;
+    font-style: oblique;
+}
+
+.containerList .list:hover{
+    margin: 2%;
+    padding: 2%;
+    font-size: 1.3rem;
+}
+
+.containerList .list dt{
+    margin: 3%;
+}
+
+.containerList .list dd{
+    margin: 1%;
+    margin-left: 10%;
+}
+
+.containerList .list ol{
+    margin: 1%;
+    padding-top: 2%;
+}
+
+.containerList .list li{
+    margin-left: 8%;
+    margin-bottom: 2%;
+}
+
+/*Game Infotmation*/
+
+.titleGame{
+    padding-left: 5%;
+    font-size: 2rem;
+    font-style: oblique;
+}
+
+.containerBoard{
+    font-size: 1.5rem;
+    margin: 3%;
+    padding: 2%;
+    border-radius: var(--styleBorderRadius);
+    box-shadow: var(--styleBorderShadow);
+}
+
+.containerTable{
+    width: 100%;
+    display: row;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.subTableTitle{
+    text-align: start;
+    padding-bottom: 3%;
+    text-decoration: underline;
+}
+
+.containerTable iframe{
+    width: 50%;
+    height: 100%;
+    border-radius: var(--styleBorderRadius);
+    box-shadow: 2px 5px 10px 5px;
+    transition: var(--transition);
+}
+
+.containerTable iframe:hover{
+    width: 90%;
+    margin: 10%;
+}
+
+.subTable div{
+    padding-bottom: 3%;
+}
+
+.subTable p{
+    padding-top: 1%;
+}
+
+.subTable span{
+    font-weight: bold;
+}
+
+.contactTable{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.contactTable a{
+    color: black;
+    text-decoration: none;
+
+}
+
+/*Registration*/
+
+.registrationTitle{
+    font-size: 3rem;
+    color: white;
+    -webkit-text-stroke: 1px yellow;
+    text-align: center;
+}
+
+.containerRegistration{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    box-shadow: var(--styleBorderShadow);
+    margin: 3%;
+    padding: 1%;
+}
+
+.containerRegistration fieldset{
+    padding: 1%;
+    border: none;
+}
+
+.containerRegistration fieldset input{
+    padding: 0.5%;
+    border: var(--styleBorder);
+    border-radius: var(--styleBorderRadius);
+    transition: var(--transition);
+}
+
+.registrationButton input{
+    width: 10%;
+    font-size: 1.3rem;
+    transition: var(--transition);
+}
+
+.registrationButton input:hover{
+    background-color: yellow;
+    border-color: white;
+    width: 11%;
+    font-size: 1.5rem;
+}
+
+.formText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-family: monospace;
+    margin-bottom: 3%;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 1%;
+    font-size: 1.5rem;
+}
